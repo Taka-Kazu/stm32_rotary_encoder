@@ -8,7 +8,7 @@ class STM32RotaryEncoder
 {
 public:
 	virtual ~STM32RotaryEncoder(void) = 0;
-	virtual void initialise(void)= 0;
+	virtual void initialize(void)= 0;
 	virtual long int get_pulse(void) = 0;
 	virtual void reset(void) = 0;
 };
@@ -20,7 +20,7 @@ class STM32RotaryEncoder1:public STM32RotaryEncoder
 {
 public:
     STM32RotaryEncoder1();
-    virtual void initialise(void);
+    virtual void initialize(void);
     virtual long int get_pulse(void);
     virtual void reset(void);
 private:
@@ -33,7 +33,7 @@ class STM32RotaryEncoder2:public STM32RotaryEncoder
 {
 public:
     STM32RotaryEncoder2();
-    virtual void initialise(void);
+    virtual void initialize(void);
     virtual long int get_pulse(void);
     virtual void reset(void);
 private:
@@ -46,7 +46,7 @@ class STM32RotaryEncoder3:public STM32RotaryEncoder
 {
 public:
     STM32RotaryEncoder3();
-    virtual void initialise(void);
+    virtual void initialize(void);
     virtual long int get_pulse(void);
     virtual void reset(void);
 private:
@@ -59,7 +59,7 @@ class STM32RotaryEncoder4:public STM32RotaryEncoder
 {
 public:
     STM32RotaryEncoder4();
-    virtual void initialise(void);
+    virtual void initialize(void);
     virtual long int get_pulse(void);
     virtual void reset(void);
 private:
@@ -72,7 +72,7 @@ class STM32RotaryEncoder5:public STM32RotaryEncoder
 {
 public:
     STM32RotaryEncoder5();
-    virtual void initialise(void);
+    virtual void initialize(void);
     virtual long int get_pulse(void);
     virtual void reset(void);
 private:
@@ -85,7 +85,7 @@ class STM32RotaryEncoder8:public STM32RotaryEncoder
 {
 public:
     STM32RotaryEncoder8();
-    virtual void initialise(void);
+    virtual void initialize(void);
     virtual long int get_pulse(void);
     virtual void reset(void);
 private:

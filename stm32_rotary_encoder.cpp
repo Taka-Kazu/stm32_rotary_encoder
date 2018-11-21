@@ -14,8 +14,8 @@ STM32RotaryEncoder1::STM32RotaryEncoder1(void) {
 	printf("stm32re1 is ready\r\n");
 }
 
-void STM32RotaryEncoder1::initialise(void) {
-	__GPIOA_CLK_ENABLE(); 
+void STM32RotaryEncoder1::initialize(void) {
+	__GPIOA_CLK_ENABLE();
 	GPIOA->MODER &= 0xFFF0FFFF;
 	GPIOA->MODER |= 0xA0000;
 	GPIOA->OTYPER |= 0x300;
@@ -60,7 +60,7 @@ STM32RotaryEncoder2::STM32RotaryEncoder2(void) {
 	printf("stm32re2 is ready\r\n");
 }
 
-void STM32RotaryEncoder2::initialise(void) {
+void STM32RotaryEncoder2::initialize(void) {
 	__GPIOA_CLK_ENABLE();
 	GPIOA->MODER &= 0xFFFFFFF0;
 	GPIOA->MODER |= 0xA;
@@ -104,14 +104,14 @@ STM32RotaryEncoder3::STM32RotaryEncoder3(void) {
 	printf("stm32re3 is ready\r\n");
 }
 
-void STM32RotaryEncoder3::initialise(void) {
+void STM32RotaryEncoder3::initialize(void) {
 	__GPIOA_CLK_ENABLE();
 
 	GPIOA->MODER &= 0xFFFF0FFF;
 	GPIOA->MODER |= 0xA000;
 	GPIOA->OTYPER |= 0xC0;
 	GPIOA->OSPEEDR |= 0x5000;
-	GPIOA->PUPDR |= 0x0; 
+	GPIOA->PUPDR |= 0x0;
 	GPIOA->AFR[0] |= 0x22000000;
 	GPIOA->AFR[1] |= 0x00000000;
 
@@ -148,7 +148,7 @@ STM32RotaryEncoder4::STM32RotaryEncoder4(void) {
 	printf("stm32re4 is ready\r\n");
 }
 
-void STM32RotaryEncoder4::initialise(void) {
+void STM32RotaryEncoder4::initialize(void) {
 	__GPIOB_CLK_ENABLE();
 
 	GPIOB->MODER &= 0xFFFF0FFF;
@@ -196,7 +196,7 @@ STM32RotaryEncoder5::STM32RotaryEncoder5(void) {
 	printf("stm32re5 is ready\r\n");
 }
 
-void STM32RotaryEncoder5::initialise(void) {
+void STM32RotaryEncoder5::initialize(void) {
 	__GPIOA_CLK_ENABLE();
 	GPIOA->MODER &= 0xFFFFFFF0;
 	GPIOA->MODER |= 0xA;
@@ -242,7 +242,7 @@ STM32RotaryEncoder8::STM32RotaryEncoder8(void) {
 	printf("stm32re8 is ready\r\n");
 }
 
-void STM32RotaryEncoder8::initialise(void) {
+void STM32RotaryEncoder8::initialize(void) {
 	__GPIOC_CLK_ENABLE();
 
 	GPIOC->MODER &= 0xFFFF0FFF;
